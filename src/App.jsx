@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 
 // const response = fetch('https://www.jsonkeeper.com/b/MDXW')
 // console.log(response)
@@ -25,20 +23,26 @@ function App() {
     async function getMenu() {
       const response = await fetch('https://www.jsonkeeper.com/b/MDXW');
       const menuItemsReturn = await response.json();
+      console.log('Menu Items Return: ', menuItemsReturn)
+      // setMenuItems(<p>Chicken</p>)
       setMenuItems(menuItemsReturn.map(item => ( 
-        <p key={item.id}>{item.title}</p> 
-        )))
-      }
-      getMenu()
-    }, [])
-    
-    return (
-      <div className="p-5">
-        <Link to='/about'>About</Link>
-        <Title />
-        {menuItems}
-      </div>
-    );
+        <div key={item.id}>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+          <p className="text-end"><strong>{item.price}</strong></p>
+        </div>
+      )))
     }
+    getMenu()
+  }, [])
+    
+  return (
+    <div className="p-5">
+      <Link to='/about'>About</Link>
+      <Title />
+      {menuItems}
+    </div>
+  )
+}
     
 export default App

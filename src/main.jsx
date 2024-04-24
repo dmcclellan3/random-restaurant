@@ -21,13 +21,13 @@ const site = import.meta.env.BASE_URL
 
 function Layout() {
   return (
-      <>
-        <Header />
-        <div id='page-content'>
-          <Outlet />
-        </div>
-        <Footer />
-      </>
+    <>
+      <Header />
+      <div id='page-content'>
+        <Outlet />
+      </div>
+      <Footer />
+    </>
   )
 }
 
