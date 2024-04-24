@@ -4,13 +4,14 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+// import Image from './dad-bod-logo.png'
     
     function Header() {
       return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
           <Container>
               <Col xs={3} md={2}>
-              <Image id="header-logo" src="https://cdn.shopify.com/s/files/1/0050/0518/1021/collections/Dad_Bod_Decals_1200x1200.png?v=1590420252" thumbnail />
+              <Image id="header-logo" src="dad bod logo.png" thumbnail />
               </Col>
               
             <Navbar.Brand>Dad Bod's Bar & Grill</Navbar.Brand>
@@ -28,7 +29,7 @@ import Image from 'react-bootstrap/Image';
                 </NavDropdown>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">More deets</Nav.Link>
+                {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
                 <Nav.Link eventKey={2} href="#memes">
                 </Nav.Link>
               </Nav>

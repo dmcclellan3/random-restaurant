@@ -9,9 +9,9 @@ import { useEffect, useState } from "react";
 
 const Title = () => {
   return (
-    <h1>
-      Hello World!
-    </h1>
+    <h2 className="justify-content-center">
+      We got what you want
+    </h2>
   )
 }
 
@@ -24,7 +24,6 @@ function App() {
       const response = await fetch('https://www.jsonkeeper.com/b/MDXW');
       const menuItemsReturn = await response.json();
       console.log('Menu Items Return: ', menuItemsReturn)
-      // setMenuItems(<p>Chicken</p>)
       setMenuItems(menuItemsReturn.map(item => ( 
         <div key={item.id}>
           <h3>{item.title}</h3>
