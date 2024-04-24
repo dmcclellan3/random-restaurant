@@ -13,6 +13,7 @@ body {
 #page-content {
   flex-grow: 2;
 }
-#header-logo{
-  justify-content: left;
+h1{
+  justify-content: center;
 }
+

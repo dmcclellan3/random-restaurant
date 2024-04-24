@@ -9,7 +9,7 @@ import Image from 'react-bootstrap/Image';
       return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
           <Container>
-              <Col xs={4} md={2}>
+              <Col xs={3} md={2}>
               <Image id="header-logo" src="https://cdn.shopify.com/s/files/1/0050/0518/1021/collections/Dad_Bod_Decals_1200x1200.png?v=1590420252" thumbnail />
               </Col>
               
