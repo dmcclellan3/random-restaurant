@@ -8,11 +8,46 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;  
+  /* justify-items: center;
+  grid-template-columns: repeat(2, 1fr); */
+
 }
+
+/* #menu-layout{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+} */
+
+
+
+#restaurant-name{
+  font-size: 25px;
+}
+
+#header-logo{
+  width: 150px;
+}
+
 #page-content {
-  flex-grow: 2;
-  /* overflow: scroll; */
+  grid-template-columns: repeat(2, 1);
+  grid-gap: 10px;
+}
+
+h2{
+  border-bottom: 2px solid black
+}
+
+#navbar{
+background-color: rgb(57, 57, 212);
+color: white;
+font-size: 20px;
+}
+
+#collapsible-nav-dropdown{
+  color: white;
 }
 
 
