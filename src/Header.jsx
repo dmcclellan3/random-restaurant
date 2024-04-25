@@ -20,7 +20,7 @@ import Image from 'react-bootstrap/Image';
               <Nav className="me-auto">
                 <Nav.Link href="#features">Menu</Nav.Link>
                 <Nav.Link href="#pricing"></Nav.Link>
-                <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
+                <NavDropdown title="More Info" id="collapsible-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">Contact Us</NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2">
                     Location
