@@ -21,7 +21,7 @@ function Food({item}){
       <h3>{item.title}</h3>
       <p>{item.description}</p>
       <p>{item.category}</p>
-      <p className="text-end"><strong>{item.price}</strong></p>
+      <p className="text-end"><strong>${item.price}</strong></p>
 
     </div>
   )  
@@ -36,12 +36,12 @@ function App() {
       const response = await fetch('https://www.jsonkeeper.com/b/MDXW');
       const allMenuItemsArray = await response.json();
       console.log('Menu Items Return: ', allMenuItemsArray)
-      const americanFoodArray = allMenuItemsArray.filter(menuItem => menuItem.cuisine_type === 'American' || menuItem.cuisine_type === 'Mexican')
+      const americanFoodArray = allMenuItemsArray.filter(menuItem => menuItem.cuisine_type === 'American' || menuItem.cuisine_type === 'Mexican'|| menuItem.cuisine_type === 'Italian' || menuItem.category === 'breakfast')
       const americanFoodComponents = americanFoodArray.map(item =>  <Food item={item}/>)
-      const appetizersFoodArray = allMenuItemsArray.filter(menuItem => menuItem.category === 'Breakfast')
-      const appetizersFoodComponents = appetizersFoodArray.map(item => <Food item={item}/>)
+      // const appetizersFoodArray = allMenuItemsArray.filter(menuItem => menuItem.category === 'Breakfast')
+      // const appetizersFoodComponents = appetizersFoodArray.map(item => <Food item={item}/>)
       setMenuItems(americanFoodComponents)
-      setMenuItems(appetizersFoodComponents)
+      // setMenuItems(appetizersFoodComponents)
     }
     getMenu()
   }, [])
