@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-// import Image from './dad-bod-logo.png'
+
     
     function Header() {
       return (

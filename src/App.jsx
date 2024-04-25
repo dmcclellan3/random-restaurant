@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
 
 const Title = () => {
   return (
-    <h2 className="justify-content-center">
+    <h2>
       We got what you want
     </h2>
   )
@@ -28,16 +28,20 @@ function App() {
         <div key={item.id}>
           <h3>{item.title}</h3>
           <p>{item.description}</p>
+          <p>{item.category}</p>
           <p className="text-end"><strong>{item.price}</strong></p>
         </div>
       )))
     }
     getMenu()
   }, [])
+
+    
+  
     
   return (
     <div className="p-5">
-      <Link to='/about'>About</Link>
+      {/* <Link to='/about'>About</Link> */}
       <Title />
       {menuItems}
     </div>
