@@ -5,13 +5,8 @@ body {
   height: 100%;
 }
 #root {
-  /* display: flex; */
   height: 100%;
-  /* flex-direction: column; */
-  /* justify-content: space-between;   */
-  /* justify-items: center;
-  grid-template-columns: repeat(2, 1fr); */
-
+  
 }
 
 #appetizer-layout{
@@ -34,7 +29,6 @@ body {
 
 
 #menu-layout{
-  /* display: grid; */
   justify-items: center;
   padding: 40px;
 }
@@ -81,12 +75,8 @@ font-size: 20px;
 #footer{
   color: white;
   display: block;
-  /* align-items: center; */
   justify-content: left;
   padding: 50px;
-  /* padding-right: 200px; */
-  /* padding-left: 200px; */
-  /* padding-top: 100px; */
   font-size: larger;
 }
 
@@ -99,7 +89,7 @@ font-size: 20px;
 }
 
 #right-header-img{
-  width:125px;
+  width:130px;
   border-radius: 5px;
 }
 

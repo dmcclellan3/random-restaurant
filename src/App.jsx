@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; 
+
 
 //Title rendering
 const Title = ({section}) => {
@@ -39,6 +40,7 @@ function App() {
     <div className="p-5">
       <Title
       section = {'Appetizers'} />
+      <p classname='d-flex justify-content-right'><em>Ask your server about rotating drafts</em></p>
       <div id='menu-layout'>
           <div id="appetizer-layout">
           {menuItems.filter(menuItem =>  menuItem.category === 'Appetizer' || menuItem.cuisine_type === "American" && menuItem.cuisine_type === "Mexican").map(item =>  <Food item={item}/>)}
