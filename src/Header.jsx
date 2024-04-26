@@ -18,11 +18,11 @@ import Image from 'react-bootstrap/Image';
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link className='text-light' href="#features">Menu</Nav.Link>
+                <Nav.Link className='text-light' href="/">Menu</Nav.Link>
                 <Nav.Link href="#pricing"></Nav.Link>
                 <NavDropdown title="More Info" id="collapsible-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Contact Us</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
+                  <NavDropdown.Item href="./Contact">Contact Us</NavDropdown.Item>
+                  <NavDropdown.Item href="https://www.google.com/search?q=348+e+main+st&sca_esv=0717052e380d506a&sxsrf=ACQVn09gEYnTgqaqFoRk4Zpdvph_JebtCA%3A1714094316004&source=hp&ei=6wArZq2SO_eZptQP2pOq8AU&iflsig=ANes7DEAAAAAZisO_PZ0hzlUz2FVgDwN7IW1rwJoeA1t&oq=348+E+&gs_lp=Egdnd3Mtd2l6IgYzNDggRSAqAggAMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEjkLlCzDFirHXABeACQAQGYAZwBoAHDBaoBAzMuM7gBA8gBAPgBAZgCBqACzwSoAgrCAgcQIxgnGOoCwgIKECMYgAQYJxiKBcICCxAuGIAEGLEDGNQCwgILEC4YgAQYsQMYgwHCAggQABiABBixA8ICCxAAGIAEGLEDGIMBwgILEC4YgAQYxwEYrwHCAgQQABgDwgIGEAAYAxgKmAMPkgcDMy4zoAfRKA&sclient=gws-wiz">
                     Location
                   </NavDropdown.Item>
                   {/* <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item> */}

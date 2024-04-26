@@ -5,21 +5,43 @@ body {
   height: 100%;
 }
 #root {
-  display: flex;
+  /* display: flex; */
   height: 100%;
-  flex-direction: column;
-  justify-content: space-between;  
+  /* flex-direction: column; */
+  /* justify-content: space-between;   */
   /* justify-items: center;
   grid-template-columns: repeat(2, 1fr); */
 
 }
 
-/* #menu-layout{
+#appetizer-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  /* justify-items: center; */
+}
+
+#lunch-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  /* justify-items: center; */
+}
+
+#dinner-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+  /* overflow: scroll; */
+  /* justify-items: center; */
+}
+
+
+#menu-layout{
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-} */
+  padding: 40px;
+}
 
 
 
@@ -31,10 +53,10 @@ body {
   width: 150px;
 }
 
-#page-content {
+/* #page-content {
   grid-template-columns: repeat(2, 1);
   grid-gap: 10px;
-}
+} */
 
 h2{
   border-bottom: 2px solid black
@@ -49,5 +71,13 @@ font-size: 20px;
 #collapsible-nav-dropdown{
   color: white;
 }
+
+.contact-form{
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+
+
 
 
