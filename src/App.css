@@ -18,27 +18,23 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 70px;
-  /* justify-items: center; */
 }
 
 #lunch-layout{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 70px;
-  /* justify-items: center; */
 }
 
 #dinner-layout{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 70px;
-  /* overflow: scroll; */
-  /* justify-items: center; */
 }
 
 
 #menu-layout{
-  display: grid;
+  /* display: grid; */
   justify-items: center;
   padding: 40px;
 }
@@ -53,13 +49,18 @@ body {
   width: 150px;
 }
 
+#item-borders{
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
 /* #page-content {
   grid-template-columns: repeat(2, 1);
   grid-gap: 10px;
 } */
 
 h2{
-  border-bottom: 2px solid black
+  border-bottom: 2px solid black;
+  justify-content: center;
 }
 
 #navbar{
@@ -75,6 +76,31 @@ font-size: 20px;
 .contact-form{
   padding-left: 350px;
   padding-right: 350px;
+}
+
+#footer{
+  color: white;
+  display: block;
+  /* align-items: center; */
+  justify-content: left;
+  padding: 50px;
+  /* padding-right: 200px; */
+  /* padding-left: 200px; */
+  /* padding-top: 100px; */
+  font-size: larger;
+}
+
+#footer-image{
+  height:200px;
+  width: 200px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* padding:50px; */
+}
+
+#right-header-img{
+  width:125px;
+  border-radius: 5px;
 }
 
 

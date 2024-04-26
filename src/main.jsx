@@ -26,6 +26,7 @@ function Layout() {
       <Header />
       <div id='page-content'>
         <Outlet />
+        <Footer />
       </div>
     </>
   )

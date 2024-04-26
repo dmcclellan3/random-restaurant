@@ -14,7 +14,7 @@ import Image from 'react-bootstrap/Image';
               <Image id="header-logo" src="https://www.creativefabrica.com/wp-content/uploads/2020/12/03/Dad-Bod-Graphics-6992196-1.jpg" thumbnail />
               </Col>
               
-            <Navbar.Brand id="restaurant-name" className='text-light'>Dad Bod's Bar & Grill</Navbar.Brand>
+            <Navbar.Brand id="restaurant-name" className='text-light p-5'>Dad Bod Bar & Grill</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -29,7 +29,7 @@ import Image from 'react-bootstrap/Image';
                 </NavDropdown>
               </Nav>
               <Nav>
-                {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
+                <img src="https://i.etsystatic.com/26641650/r/il/83fa18/2812462488/il_1588xN.2812462488_dka0.jpg" id="right-header-img"></img>
                 <Nav.Link eventKey={2} href="#memes">
                 </Nav.Link>
               </Nav>
