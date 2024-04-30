@@ -5,11 +5,95 @@ body {
   height: 100%;
 }
 #root {
-  display: flex;
   height: 100%;
-  flex-direction: column;
+  
+}
+
+#appetizer-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+}
+
+#lunch-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+}
+
+#dinner-layout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 70px;
+}
+
+
+#menu-layout{
+  justify-items: center;
+  padding: 40px;
+}
+
+
+
+#restaurant-name{
+  font-size: 25px;
+}
+
+#header-logo{
+  width: 150px;
+}
+
+#item-borders{
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+/* #page-content {
+  grid-template-columns: repeat(2, 1);
+  grid-gap: 10px;
+} */
+
+h2{
+  border-bottom: 2px solid black;
   justify-content: center;
 }
-#page-content {
-  flex-grow: 2;
+
+#navbar{
+background-color: rgb(57, 57, 212);
+color: white;
+font-size: 20px;
 }
+
+#collapsible-nav-dropdown{
+  color: white;
+}
+
+.contact-form{
+  padding-left: 350px;
+  padding-right: 350px;
+}
+
+#footer{
+  color: white;
+  display: block;
+  justify-content: left;
+  padding: 50px;
+  font-size: larger;
+}
+
+#footer-image{
+  height:200px;
+  width: 200px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* padding:50px; */
+}
+
+#right-header-img{
+  width:130px;
+  border-radius: 5px;
+}
+
+
+
+
+
