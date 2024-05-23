@@ -23,19 +23,14 @@ function Food({item}){
 //Main app
 function App() {
   const [menuItems, setMenuItems] = useState([]) //Effect hook to fetch menu items when the component forms
-  const [appetizers, setAppetizers] = useState([])
+  // const [appetizers, setAppetizers] = useState([])
   console.log(menuItems)
   useEffect(() => {
     async function getMenu() { //fetching items from API 
       const response = await fetch('http://127.0.0.1:8000/menuitems/');
       const allMenuItemsArray = await response.json();
       setMenuItems(allMenuItemsArray)
-      // foodComponents()
-      // const allAppetizersArray = allMenuItemsArray.filter(menuItem => menuItem.category_name === 'Appetizer')
-      // console.log('Menu Items Return: ', allMenuItemsArray)
-      // const anArrayOfFoodComponents = allMenuItemsArray.map(item =>  <Food key={item.id} item={item}/>)
-      // setMenuItems(anArrayOfFoodComponents) //Setting the menu items to state variable 
-      // const appetizerComponents = allAppetizersArray.map(menuItem => <Food key={}/>)
+      
     }
     getMenu()
   }, [])
@@ -48,26 +43,21 @@ function App() {
   };  
 
     
-  // {menuItems.filter(menuItem =>  menuItem.category_name === 'Appetizer')}
   return (
     <div className="p-5">
-      <Title
+      <Title id='appetizer-layout'
       section = {'Appetizers'} />
+      <p className='d-flex justify-content-right'><em>Ask your server about rotating drafts</em></p>
       <FoodComponents categoryName={'Appetizers'}/>
       {/* {menuItems} */}
-      <p className='d-flex justify-content-right'><em>Ask your server about rotating drafts</em></p>
       <div id='menu-layout'>
-          <div id="appetizer-layout">
-          {/* || Logical OR/ && Logical AND/ OR returns true if at least one operand returns true   */}
-          {/* Logical AND returns true if both operands are true */}
-        </div>
-        
+
           <Title section = {'Lunch'} />
           <FoodComponents categoryName={'Lunch'}/>
       
           <Title section = {'Dinner'} />
           <FoodComponents categoryName={'Dinner'}/>
-          
+
       </div>
     </div>
   )
