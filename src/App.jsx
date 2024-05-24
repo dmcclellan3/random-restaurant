@@ -23,7 +23,6 @@ function Food({item}){
 //Main app
 function App() {
   const [menuItems, setMenuItems] = useState([]) //Effect hook to fetch menu items when the component forms
-  // const [appetizers, setAppetizers] = useState([])
   console.log(menuItems)
   useEffect(() => {
     async function getMenu() { //fetching items from API 
@@ -44,19 +43,22 @@ function App() {
 
     
   return (
-    <div className="p-5">
-      <Title id='appetizer-layout'
-      section = {'Appetizers'} />
-      <p className='d-flex justify-content-right'><em>Ask your server about rotating drafts</em></p>
-      <FoodComponents categoryName={'Appetizers'}/>
-      {/* {menuItems} */}
+    <div className="p-5" id='food-item'>
       <div id='menu-layout'>
-
+      <Title section = {'Appetizers'} />
+      <p><em>Ask your server about rotating drafts</em></p>
+      <div id='appetizer-layout'>
+      <FoodComponents categoryName={'Appetizers'}/>
+      </div>
+      <br />
           <Title section = {'Lunch'} />
+        <div id='lunch-layout'>
           <FoodComponents categoryName={'Lunch'}/>
-      
+        </div>
           <Title section = {'Dinner'} />
+        <div id='dinner-layout'>
           <FoodComponents categoryName={'Dinner'}/>
+        </div>
 
       </div>
     </div>
