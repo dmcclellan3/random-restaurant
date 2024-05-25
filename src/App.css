@@ -13,8 +13,8 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 70px;
-  justify-items: center; 
-  align-items: center;
+  /* justify-items: center;  */
+  align-items: start;
   justify-content: space-between;
 }
 
@@ -32,10 +32,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 70px;
-  justify-items: center;
+  /* justify-items: center; */
   align-items: center;
-  justify-content: space-between;
-
+  justify-content: center;
+  
 }
 
 
@@ -111,6 +111,8 @@ font-size: 20px;
   width:130px;
   border-radius: 5px;
 }
+
+
 
 
 

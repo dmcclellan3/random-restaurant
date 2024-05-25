@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"; 
 
 
-//Title rendering
 const Title = ({section}) => {
   return (
     <h2 className="d-flex justify-content-center mt-5 mb-4">
@@ -9,7 +8,6 @@ const Title = ({section}) => {
     </h2>
   )
 }
-//Component for rendering food items/details
 function Food({item}){
   return(
     <div key={item.id}>
@@ -20,12 +18,12 @@ function Food({item}){
     </div>
   )  
 }
-//Main app
+
 function App() {
   const [menuItems, setMenuItems] = useState([]) //Effect hook to fetch menu items when the component forms
   console.log(menuItems)
   useEffect(() => {
-    async function getMenu() { //fetching items from API 
+    async function getMenu() { //retrieves items from the API 
       const response = await fetch('http://127.0.0.1:8000/menuitems/');
       const allMenuItemsArray = await response.json();
       setMenuItems(allMenuItemsArray)
@@ -50,7 +48,6 @@ function App() {
       <div id='appetizer-layout'>
       <FoodComponents categoryName={'Appetizers'}/>
       </div>
-      <br />
           <Title section = {'Lunch'} />
         <div id='lunch-layout'>
           <FoodComponents categoryName={'Lunch'}/>
