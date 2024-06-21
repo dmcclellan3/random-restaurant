@@ -52,9 +52,7 @@ const router = createBrowserRouter([
       },
     ]
   }
-], {
-  basename: site
-})
+],)
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
